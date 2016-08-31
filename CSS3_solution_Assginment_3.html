@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>CSS_Assignment3</title>
+	<style type="text/css">
+		div{
+			width:45px;
+			height:45px;
+			border:solid 1px;
+			background-color: green;
+			margin:auto;
+			color: white;
+			text-align:center;
+			padding: 10 10 0 10;
+
+			animation-name:box;
+			animation-duration:10s;
+			animation-iteration-count:1;
+			animation-delay:1s;
+			animation-timing-function:linear;
+		}
+
+
+		@keyframes box{
+			0%{background-color: green;border-radius:0%;}			
+			25%{background-color: orange;border-radius: 25%;}
+			75%{background-color: orange;border-radius: 35%;}
+			100%{background-color: orange;border-radius:50%;}
+		}
+
+		div:hover{
+			width:50px;
+			height:50px;
+			border-radius:50%;
+			background-color: orange;			
+		}
+
+
+	</style>
+</head>
+<body>
+<div>Box</div>
+</body>
+</html>
